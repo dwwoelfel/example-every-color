@@ -3,7 +3,7 @@
     command = "# No build command"
 
 [[redirects]]
-    from = "/package/:name*"
+    from = "/package/:name/*"
     to = "/.netlify/builders/color"
     status = 200
     force = true
