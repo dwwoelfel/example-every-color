@@ -2,6 +2,7 @@ const { builder } = require("@netlify/functions");
 const NetlifyGraph = require("./netlifyGraph");
 
 async function handler(event) {
+  console.log(process.env);
   const [, _prefix, ...packageNameParts] = event.path.split("/");
 
   const name = packageNameParts.join("/");
