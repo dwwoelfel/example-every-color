@@ -1,6 +1,7 @@
 const { builder } = require('@netlify/functions');
 
 async function handler(event) {
+    console.log('event', event);
     const [, type, ...colorParts] = event.path.split('/');
 
     const time = new Date().toString();
