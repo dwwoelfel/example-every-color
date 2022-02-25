@@ -3,19 +3,8 @@
     command = "# No build command"
 
 [[redirects]]
-    from = "/hex/:color"
+    from = "/package/:name*"
     to = "/.netlify/builders/color"
     status = 200
     force = true
 
-[[redirects]]
-    from = "/rgb/:r/:g/:b"
-    to = "/.netlify/builders/color"
-    status = 200
-    force = true
-
-[[redirects]]
-    from = "/named/:color"
-    to = "/.netlify/builders/color"
-    status = 200
-    force = true

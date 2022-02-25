@@ -1,0 +1,9 @@
+query NpmPackage($name: String!) @netlify(id: """a0b2f55c-2869-47bf-b0e5-e90330d1b1a3""", doc: """An example query to start with.""") {
+  npm {
+    package(name: $name) {
+      id
+      name
+      description
+    }
+  }
+}
